@@ -1,0 +1,2 @@
+# Phosani3D
+Open-source website builder with visual drag-and-drop editor, AI site generation, and JSON-first architecture. Self-hosted alternative to Framer, Lovable, v0. React 19 + TypeScript + Tailwind CSS.
