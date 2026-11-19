@@ -1,106 +1,90 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tải Phosani3D</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
-  <style>
-    :root {
-      --bg: #f8f0ea; --card: #ffffff; --fg: #2a1a14; --mut: #6e5a50; --ln: #e6d6cc;
-      --ac: #cf3f10; --ac-h: #b2350c; --ac-fg: #ffffff;
-      --ui: 'Instrument Sans', system-ui, sans-serif;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1a1210; --card: #261b17; --fg: #f8ede6; --mut: #bba89d; --ln: #3b2a24;
-        --ac: #ff7b4d; --ac-h: #ff9468; --ac-fg: #2a0e02;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--fg);
-      font: 16px/1.6 var(--ui); padding: 48px 16px 64px;
-    }
-    main { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
-    header { display: flex; align-items: center; gap: 18px; }
-    .logo {
-      width: 76px; height: 76px; flex: none; border-radius: 18px;
-      background: linear-gradient(135deg, #cf3f10, #f0b400 60%, #6f52d4);
-      display: grid; place-items: center; font-size: 32px; color: white; font-weight: 700;
-      box-shadow: 0 8px 24px rgba(207,63,16,.25);
-    }
-    h1 { margin: 0; font-size: 1.75rem; font-weight: 700; }
-    .sub { color: var(--mut); margin: 4px 0 0; font-size: 0.95rem; }
-    .card {
-      background: var(--card); border: 1px solid var(--ln); border-radius: 16px;
-      padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,.04);
-    }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      background: var(--ac); color: var(--ac-fg); border: none; border-radius: 12px;
-      padding: 14px 28px; font: 600 1.05rem var(--ui); cursor: pointer;
-      text-decoration: none; transition: background .15s, transform .1s;
-      box-shadow: 0 4px 14px rgba(207,63,16,.3);
-    }
-    .btn:hover { background: var(--ac-h); transform: translateY(-1px); }
-    .meta { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 16px; color: var(--mut); font-size: 0.9rem; }
-    h2 { margin: 0 0 12px; font-size: 1.15rem; }
-    ol, ul { margin: 0; padding-left: 1.3em; }
-    li { margin: 8px 0; }
-    .note {
-      background: #fff2c7; color: #6b4e00; border-radius: 10px; padding: 12px 16px;
-      font-size: 0.92rem; margin-top: 16px;
-    }
-    @media (prefers-color-scheme: dark) {
-      .note { background: #3a2d0a; color: #f4d27a; }
-    }
-    footer { color: var(--mut); font-size: 0.85rem; text-align: center; margin-top: 12px; }
-  </style>
-</head>
-<body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Tải Phosani3D</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f8f0ea; --card: #ffffff; --fg: #2a1a14; --mut: #6e5a50; --ln: #e6d6cc;
+    --ac: #cf3f10; --ac-h: #b2350c; --ac-fg: #ffffff; --teal: #12a394; --violet: #6f52d4; --sun: #f0b400;
+    --warn-bg: #fff2c7; --warn-ink: #6b4e00; --ok: #0e8a5f; --err: #c4263f;
+    --ui: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; --mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #1a1210; --card: #261b17; --fg: #f8ede6; --mut: #bba89d; --ln: #3b2a24;
+    --ac: #ff7b4d; --ac-h: #ff9468; --ac-fg: #2a0e02; --teal: #3fd1c0; --violet: #9c86f2; --sun: #ffcb3d;
+    --warn-bg: #3a2d0a; --warn-ink: #f4d27a; --ok: #46d19a; --err: #ff8099; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #1a1210; --card: #261b17; --fg: #f8ede6; --mut: #bba89d; --ln: #3b2a24;
+    --ac: #ff7b4d; --ac-h: #ff9468; --ac-fg: #2a0e02; --teal: #3fd1c0; --violet: #9c86f2; --sun: #ffcb3d;
+    --warn-bg: #3a2d0a; --warn-ink: #f4d27a; --ok: #46d19a; --err: #ff8099; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 var(--ui); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 64px; }
+  main { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  .logo { width: 76px; height: 76px; flex: none; border-radius: 18px; display: block; }
+  h1 { margin: 0; font-size: 2.1rem; line-height: 1.1; font-weight: 700; letter-spacing: -.01em; text-wrap: balance; }
+  h1 i { font-style: normal; color: var(--ac); }
+  .lead { margin: 6px 0 0; color: var(--mut); text-wrap: pretty; }
+  .get { background: var(--card); border: 1px solid var(--ln); border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--mut); font-size: .875rem; margin: 0; padding: 0; list-style: none; }
+  .meta b { color: var(--fg); font-weight: 600; }
+  button#go { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 24px; border: 0; border-radius: 12px; background: var(--ac); color: var(--ac-fg); font: 600 1.0625rem var(--ui); cursor: pointer; }
+  button#go:hover:not(:disabled) { background: var(--ac-h); }
+  button#go:disabled { opacity: .65; cursor: progress; }
+  a#go { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 24px; border: 0; border-radius: 12px; background: var(--ac); color: var(--ac-fg); font: 600 1.0625rem var(--ui); cursor: pointer; text-decoration: none; }
+  a#go:hover { background: var(--ac-h); }
+  a#go:focus-visible, button#go:focus-visible, a:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+  .bar { height: 8px; border-radius: 99px; background: var(--ln); overflow: hidden; }
+  .bar > span { display: block; height: 100%; width: 0; background: var(--ac); transition: width .2s; }
+  #msg { margin: 0; font-size: .9375rem; min-height: 1.5em; }
+  #msg.ok { color: var(--ok); } #msg.err { color: var(--err); }
+  h2 { margin: 0 0 10px; font-size: 1.0625rem; font-weight: 600; }
+  ol { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 8px; }
+  .note { background: var(--warn-bg); color: var(--warn-ink); border-radius: 12px; padding: 12px 14px; font-size: .9375rem; margin: 14px 0 0; }
+  .what { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 24px; }
+  .what li { padding-left: 18px; position: relative; }
+  .what li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 3px; background: var(--teal); }
+  .what li:nth-child(3n+2)::before { background: var(--violet); }
+  .what li:nth-child(3n)::before { background: var(--sun); }
+  .sum { font: .8125rem var(--mono); color: var(--mut); overflow-wrap: anywhere; user-select: all; margin: 0; }
+  @media (prefers-reduced-motion: reduce) { .bar > span { transition: none; } }
+  @media (max-width: 420px) { h1 { font-size: 1.8rem; } .logo { width: 60px; height: 60px; border-radius: 14px; } }
+</style>
+
 <main>
   <header>
-    <div class="logo">P3</div>
-    <div>
-      <h1>Phosani3D</h1>
-      <p class="sub">Trình chiếu 3D · Phiên bản 1.1.0 · Windows</p>
-    </div>
+    <img class="logo" src="data:image/png;base64,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" width="76" height="76" alt="Biểu tượng Phosani3D">
+    <div><h1>Phosani<i>3D</i></h1><p class="lead">Làm slide quen tay như PowerPoint, lại thêm được mô hình 3D biết cử động. Không có mạng vẫn dùng được.</p></div>
   </header>
 
-  <section class="card">
-    <a class="btn" href="https://github.com/anhthcslongson-cmd/Phosani3D/releases/latest/download/Phosani3D-Windows.zip">
-      Tải Phosani3D-Windows.zip
-    </a>
-    <div class="meta">
-      <span>≈ 66 MB</span>
-      <span>SHA-256: f7afd30e…f62679</span>
-      <span>v1.1.0</span>
-    </div>
+  <section class="get" aria-labelledby="gt">
+    <h2 id="gt" style="margin:0">Bản cho Windows</h2>
+    <ul class="meta"><li><b>Phiên bản</b> <span id="ver"></span></li><li><b>Chạy trên</b> Windows 10 / 11 (64-bit)</li><li><b>Dung lượng</b> <span id="size"></span> (file zip)</li></ul>
+    <a id="go" href="https://github.com/anhthcslongson-cmd/Phosani3D/releases/latest/download/Phosani3D-Windows.zip">Tải về cho Windows</a>
+    <p class="sum" id="sum" title="Mã SHA-256 của file zip, dùng để kiểm tra file tải về có nguyên vẹn không">SHA-256 f7afd30ebc1eee11cb2bd9ed1b3723750debdd165a4ff8833d31886993f62679</p>
   </section>
 
-  <section class="card">
-    <h2>Dùng thế nào?</h2>
+  <section aria-labelledby="how">
+    <h2 id="how">Dùng thế nào?</h2>
     <ol>
-      <li>Bấm nút tải ở trên → lưu file <b>Phosani3D-Windows.zip</b>.</li>
-      <li>Chuột phải vào file zip → chọn <b>Extract All</b>.</li>
-      <li>Mở thư mục vừa giải nén → bấm đúp <b>Phosani3D.exe</b> (không cần cài đặt).</li>
+      <li>Bấm nút tải ở trên, rồi chọn nơi lưu file <b>Phosani3D-Windows.zip</b>.</li>
+      <li>Chuột phải vào file zip, chọn <b>Extract All</b> để giải nén.</li>
+      <li>Mở thư mục vừa giải nén, bấm đúp <b>Phosani3D.exe</b> là dùng được, không cần cài đặt.</li>
     </ol>
-    <p class="note">Lần đầu mở, Windows có thể hiện cảnh báo “Windows protected your PC”. Bấm <b>More info</b> → <b>Run anyway</b>.</p>
+    <p class="note">Lần đầu mở, Windows có thể hiện cảnh báo “Windows protected your PC” vì app chưa có chữ ký số. Bạn cứ bấm <b>More info</b>, rồi bấm <b>Run anyway</b> là chạy bình thường.</p>
   </section>
 
-  <section class="card">
-    <h2>Trong app có gì?</h2>
-    <ul>
-      <li>Soạn slide, hiệu ứng, chuyển cảnh và trình chiếu như PowerPoint</li>
-      <li>Thêm mô hình 3D rồi tự làm hoạt ảnh bằng các khóa</li>
-      <li>Lắp xương cho nhân vật</li>
-      <li>Nhóm đối tượng, khóa/ẩn lớp, ẩn slide</li>
-      <li>Gắn liên kết, chân trang, tìm & thay thế</li>
-      <li>Xuất ra PowerPoint (.pptx)</li>
-    </ul>
+  <section aria-labelledby="in">
+    <h2 id="in">Trong app có gì?</h2>
+    <ul class="what" id="what"></ul>
   </section>
 </main>
-<footer>Phosani3D · Tải từ GitHub Pages</footer>
-</body>
-</html>
+
+<script>
+  document.getElementById('ver').textContent = '1.1.0';
+  document.getElementById('size').textContent = '66 MB';
+  const what = ["Soạn slide, hiệu ứng, chuyển cảnh và trình chiếu như PowerPoint","Thêm mô hình 3D rồi tự làm hoạt ảnh bằng các khóa","Lắp xương cho nhân vật: xoay một khớp là cả cánh tay, cái chân đi theo","Nhóm đối tượng, khóa hoặc ẩn từng lớp, ẩn slide khi trình chiếu","Gắn liên kết, chèn chân trang, tìm và thay thế chữ trong cả bài","Xuất ra PowerPoint (.pptx) và lưu bài ngay trên máy"];
+  const ul = document.getElementById('what');
+  what.forEach(t => { const li = document.createElement('li'); li.textContent = t; ul.appendChild(li); });
+</script>
+
+</body></html>
