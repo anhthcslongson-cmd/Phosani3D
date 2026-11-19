@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tải Phosani3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #f8f0ea; --card: #ffffff; --fg: #2a1a14; --mut: #6e5a50; --ln: #e6d6cc;
+      --ac: #cf3f10; --ac-h: #b2350c; --ac-fg: #ffffff;
+      --ui: 'Instrument Sans', system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1210; --card: #261b17; --fg: #f8ede6; --mut: #bba89d; --ln: #3b2a24;
+        --ac: #ff7b4d; --ac-h: #ff9468; --ac-fg: #2a0e02;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 var(--ui); padding: 48px 16px 64px;
+    }
+    main { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+    header { display: flex; align-items: center; gap: 18px; }
+    .logo {
+      width: 76px; height: 76px; flex: none; border-radius: 18px;
+      background: linear-gradient(135deg, #cf3f10, #f0b400 60%, #6f52d4);
+      display: grid; place-items: center; font-size: 32px; color: white; font-weight: 700;
+      box-shadow: 0 8px 24px rgba(207,63,16,.25);
+    }
+    h1 { margin: 0; font-size: 1.75rem; font-weight: 700; }
+    .sub { color: var(--mut); margin: 4px 0 0; font-size: 0.95rem; }
+    .card {
+      background: var(--card); border: 1px solid var(--ln); border-radius: 16px;
+      padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--ac); color: var(--ac-fg); border: none; border-radius: 12px;
+      padding: 14px 28px; font: 600 1.05rem var(--ui); cursor: pointer;
+      text-decoration: none; transition: background .15s, transform .1s;
+      box-shadow: 0 4px 14px rgba(207,63,16,.3);
+    }
+    .btn:hover { background: var(--ac-h); transform: translateY(-1px); }
+    .meta { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 16px; color: var(--mut); font-size: 0.9rem; }
+    h2 { margin: 0 0 12px; font-size: 1.15rem; }
+    ol, ul { margin: 0; padding-left: 1.3em; }
+    li { margin: 8px 0; }
+    .note {
+      background: #fff2c7; color: #6b4e00; border-radius: 10px; padding: 12px 16px;
+      font-size: 0.92rem; margin-top: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .note { background: #3a2d0a; color: #f4d27a; }
+    }
+    footer { color: var(--mut); font-size: 0.85rem; text-align: center; margin-top: 12px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo">P3</div>
+    <div>
+      <h1>Phosani3D</h1>
+      <p class="sub">Trình chiếu 3D · Phiên bản 1.1.0 · Windows</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <a class="btn" href="https://github.com/anhthcslongson-cmd/Phosani3D/releases/latest/download/Phosani3D-Windows.zip">
+      Tải Phosani3D-Windows.zip
+    </a>
+    <div class="meta">
+      <span>≈ 66 MB</span>
+      <span>SHA-256: f7afd30e…f62679</span>
+      <span>v1.1.0</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Dùng thế nào?</h2>
+    <ol>
+      <li>Bấm nút tải ở trên → lưu file <b>Phosani3D-Windows.zip</b>.</li>
+      <li>Chuột phải vào file zip → chọn <b>Extract All</b>.</li>
+      <li>Mở thư mục vừa giải nén → bấm đúp <b>Phosani3D.exe</b> (không cần cài đặt).</li>
+    </ol>
+    <p class="note">Lần đầu mở, Windows có thể hiện cảnh báo “Windows protected your PC”. Bấm <b>More info</b> → <b>Run anyway</b>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Trong app có gì?</h2>
+    <ul>
+      <li>Soạn slide, hiệu ứng, chuyển cảnh và trình chiếu như PowerPoint</li>
+      <li>Thêm mô hình 3D rồi tự làm hoạt ảnh bằng các khóa</li>
+      <li>Lắp xương cho nhân vật</li>
+      <li>Nhóm đối tượng, khóa/ẩn lớp, ẩn slide</li>
+      <li>Gắn liên kết, chân trang, tìm & thay thế</li>
+      <li>Xuất ra PowerPoint (.pptx)</li>
+    </ul>
+  </section>
+</main>
+<footer>Phosani3D · Tải từ GitHub Pages</footer>
+</body>
+</html>
